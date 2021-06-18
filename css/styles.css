@@ -31,7 +31,7 @@
   }
 }
 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .holdingcontainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -43,6 +43,29 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  header > .banner-1 {
+    visibility: hidden;
+  }
+  .logo {
+    text-align: center;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .how-to {
+    visibility: hidden;
+  }
+  figcaption {
+    position: absolute;
+    left: 0.1px;
+    margin-right: 33.9em !important;
   }
 }
 
@@ -106,6 +129,19 @@ footer {
           align-items: center;
 }
 
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px;
+}
+
 .nav-links-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,19 +166,6 @@ nav li a {
 
 a:hover {
   color: blue;
-}
-
-.footer-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 10px;
 }
 
 .myname {
@@ -177,7 +200,8 @@ a:hover {
 
 div > a {
   text-decoration: none;
-  color: black;
+  background-color: black;
+  margin-right: 40px;
 }
 
 .internalcontainer1 {
@@ -224,8 +248,7 @@ span {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  color: white;
-  background: black;
+  color: black;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -250,10 +273,9 @@ span {
   margin: 0 auto;
 }
 
+/*
 #polars {
   margin-left: 7em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -263,8 +285,6 @@ span {
 }
 
 #nasa {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 2em;
   margin-right: 5em;
@@ -273,5 +293,25 @@ span {
 #nasatext {
   margin-left: 2em;
   margin-right: 6.9em;
+}*/
+iframe {
+  margin-left: 3em;
+  margin: 3em;
+}
+
+figcaption {
+  color: red;
+  margin-left: auto;
+  background-color: black;
+  position: relative;
+  margin-right: 10px;
+}
+
+#bottom-pics {
+  margin-right: 5.9em;
+}
+
+.centralise {
+  margin-left: 6em;
 }
 /*# sourceMappingURL=styles.css.map */
