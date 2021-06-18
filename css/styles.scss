@@ -1,0 +1,206 @@
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform:translateY(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform:translateY(0px);
+  }
+}
+
+/*
+@media screen and (max-width: 1024px){
+  .holdingcontainer {
+    flex-direction: column;
+  }
+}
+*/
+@media screen and (max-width: 768px){
+  .holdingcontainer {
+    flex-direction: column;
+  }
+  span {
+    flex-direction: column;
+  }
+}
+
+
+* {
+  min-height: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Top of the page*/
+header {
+  height: 14vh;
+  display: flex;
+  background: #5b191b;
+  align-items: center;
+}
+
+
+.logo {
+  margin: 15px;
+  flex: 1;
+}
+
+.banner-1 {
+  justify-content: flex-end;
+  margin: 15px;
+
+}
+
+.nav-links{
+  display: flex;
+  background-color: black;
+  text-decoration: none;
+}
+
+li {
+  padding: 20px 17px;
+  color: white;
+  list-style: none;
+}
+
+/*Bottom of the page*/
+footer {
+  height: 10vh;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: black;
+  align-items: center;
+}
+
+.nav-links-footer {
+  display: flex;
+  flex: 1;
+}
+
+nav li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: pink;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a:hover {
+  color: blue;
+}
+
+.footer-logo {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.myname {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+}
+
+/*Main Page*/
+
+.date-on-the-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  color: black;
+}
+
+
+.holdingcontainer {
+  width: 1000px;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+div > a {
+  text-decoration: none;
+  color: black;
+}
+
+.internalcontainer1 {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.internalcontainer2 {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+
+}
+
+.internalcontainer3 {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+
+}
+
+
+.images {
+  width: 260px;
+  height: 173.22px;
+  animation: drop 1.5s ease;
+}
+
+
+span {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background: black;
+  justify-content: flex-start;
+}
+
+.how-to {
+  display: flex;
+  margin-left: 10%;
+}
+
+
+
+.bottomcontainer {
+  width: 1000px;
+  height: 10em;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#polars {
+  margin-left: 7em;
+  display: flex;
+}
+
+#polartext {
+  margin-left: 7em;
+  margin-right: 1.9em;
+}
+
+#nasa {
+  display: flex;
+  margin-left: 2em;
+  margin-right: 5em;
+}
+
+#nasatext {
+  margin-left: 2em;
+  margin-right: 6.9em;
+}
