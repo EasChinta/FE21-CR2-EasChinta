@@ -20,7 +20,6 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
 */
 @media screen and (max-width: 1024px) {
   body {
-    background-color: olive;
     overflow-x: hidden;
   }
   .holdingcontainer {
@@ -52,7 +51,6 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
 
   .footer-logo {
     visibility: hidden;
-    
   }
 
   .nav-links-footer {
@@ -80,6 +78,15 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
   .polars {
     margin-left: -7em;
   }
+
+  iframe {
+    width: 100%;
+  }
+
+  #tesla {
+    visibility: hidden;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -88,7 +95,6 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
     margin-left: 11.52em !important;
     margin-right: 11.9em !important;
   }
-
 }
 
 @media screen and (min-width: 1920px) {
@@ -98,9 +104,12 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
     margin-right: 21.9em !important;
   }
 }
+
+
 /*                                  Tablet version
 Everything works here and I also brought back the banner on the top left (in mobile is not 
 supposed to be there), however I could make two columns.*/
+
 @media (min-width: 768px) and (max-width: 1024px) {
   h2 {
     background: lightgrey;
@@ -261,15 +270,6 @@ div > a {
   animation: drop 1.5s ease;
 }
 
-span {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-  justify-content: flex-start;
-}
-
 .how-to {
   display: flex;
   margin-left: 10%;
@@ -283,27 +283,6 @@ span {
   box-sizing: border-box;
   margin: 0 auto;
 }
-/*
-#polars {
-  margin-left: 7em;
-  display: flex;
-}
-
-#polartext {
-  margin-left: 7em;
-  margin-right: 1.9em;
-}
-
-#nasa {
-  display: flex;
-  margin-left: 2em;
-  margin-right: 5em;
-}
-
-#nasatext {
-  margin-left: 2em;
-  margin-right: 6.9em;
-}*/
 
 iframe {
   border: 5px solid black;
@@ -324,8 +303,4 @@ figcaption {
 
 .centralise {
   margin-left: 6em;
-}
-
-span {
-  background: black;
 }

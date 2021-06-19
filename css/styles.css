@@ -32,7 +32,6 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
 */
 @media screen and (max-width: 1024px) {
   body {
-    background-color: olive;
     overflow-x: hidden;
   }
   .holdingcontainer {
@@ -98,6 +97,12 @@ looked great, but then when i checked on my laptop it was smaller, so I had to m
   }
   .polars {
     margin-left: -7em;
+  }
+  iframe {
+    width: 100%;
+  }
+  #tesla {
+    visibility: hidden;
   }
 }
 
@@ -337,23 +342,6 @@ div > a {
           animation: drop 1.5s ease;
 }
 
-span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  color: black;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
 .how-to {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,27 +361,6 @@ span {
   margin: 0 auto;
 }
 
-/*
-#polars {
-  margin-left: 7em;
-  display: flex;
-}
-
-#polartext {
-  margin-left: 7em;
-  margin-right: 1.9em;
-}
-
-#nasa {
-  display: flex;
-  margin-left: 2em;
-  margin-right: 5em;
-}
-
-#nasatext {
-  margin-left: 2em;
-  margin-right: 6.9em;
-}*/
 iframe {
   border: 5px solid black;
 }
@@ -413,9 +380,5 @@ figcaption {
 
 .centralise {
   margin-left: 6em;
-}
-
-span {
-  background: black;
 }
 /*# sourceMappingURL=styles.css.map */
