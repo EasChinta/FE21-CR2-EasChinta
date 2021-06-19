@@ -11,7 +11,7 @@ However, I did manage to bring it almost as close as in the pictures with a coup
 that make it different. 
 
 First, I added a nice drop-down effect that I discovered online and I was really enthusiastic to use 
-as it also helped notice when the page was refreshed. I hope you also like it. 
+as it also helped me notice when the page was refreshed. I hope you also like it. 
 
 Secondly, I managed to make the pictures after the 'How to become a developer' banner, equal between them
 and make them look more in order along the banner. 
@@ -39,8 +39,12 @@ It has been tested on:  320x568,
 
 
 
-I also tried the tablet mode with @media query, however I could not manage to make 2 columns appear, but other than that,
+Last but not least, I also tried the tablet mode with @media query, however I could not manage to make 2 columns appear, but other than that,
 everything works and looks nice. 
+
+I wish you a great rest of the weekend! 
+
+Eas
 
 
 
