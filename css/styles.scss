@@ -1,3 +1,5 @@
+/*Drop down effect*/
+
 @keyframes drop {
   0% {
     opacity: 0;
@@ -9,14 +11,18 @@
   }
 }
 
-/*
-@media screen and (max-width: 1024px){
-  .holdingcontainer {
-    flex-direction: column;
-  }
-}
+/*Family Font*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+
+/* Screen Versions 
+I also made a big screen version, as I noticed that the h2 on my big monitor
+looked great, but then when i checked on my laptop it was smaller, so I had to make it all look the same. 
 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: olive;
+    overflow-x: hidden;
+  }
   .holdingcontainer {
     flex-direction: column;
   }
@@ -26,13 +32,33 @@
   header > .banner-1 {
     visibility: hidden;
   }
+
+  h2 {
+    background: lightgrey;
+    width: 54.2% !important;
+    margin-left: 2.65em !important;
+  }
   .logo {
     text-align: center;
   }
 
   footer {
+    position: relative !important;
+    width: 100%;
+    bottom: 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    visibility: hidden;
+    
+  }
+
+  .nav-links-footer {
+    margin-left: 13em;
+    display: flex !important;
+    flex-direction: row !important ;
   }
 
   .how-to {
@@ -44,13 +70,56 @@
     left: 0.1px;
     margin-right: 33.9em !important;
   }
+
+  span {
+    right: 30em;
+    margin-right: 28em;
+    background: black;
+  }
+
+  .polars {
+    margin-left: -7em;
+  }
 }
+
+@media screen and (min-width: 900px) {
+  h2 {
+    background: lightgrey;
+    margin-left: 11.52em !important;
+    margin-right: 11.9em !important;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  h2 {
+    background: lightgrey;
+    margin-left: 21.52em !important;
+    margin-right: 21.9em !important;
+  }
+}
+/*                                  Tablet version
+Everything works here and I also brought back the banner on the top left (in mobile is not 
+supposed to be there), however I could make two columns.*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    background: lightgrey;
+    margin-left: 2.8em !important;
+    margin-right: 21.9em !important;
+  }
+  header > .banner-1 {
+    visibility: visible;
+  }
+}
+
+/********************/
 
 * {
   min-height: 0px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
 }
 
 /*Top of the page*/
@@ -85,8 +154,8 @@ li {
 
 /*Bottom of the page*/
 footer {
-  height: 10vh;
-  position: fixed;
+  height: 15vh;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background: black;
@@ -108,7 +177,7 @@ footer {
 nav li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
-  color: pink;
+  color: white;
   display: flex;
   justify-content: flex-end;
 }
@@ -121,7 +190,7 @@ a:hover {
   text-align: center;
   font-size: 20px;
   color: white;
-  margin: 10px;
+  margin: 2px;
 }
 
 /*Main Page*/
@@ -164,6 +233,26 @@ div > a {
   flex: 1;
   padding: 15px;
   font-size: 18px;
+}
+
+.bot-left1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bot-right1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bot-left2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-right2 {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .images {
@@ -217,12 +306,12 @@ span {
 }*/
 
 iframe {
-  margin-left: 3em;
-  margin: 3em;
+  border: 5px solid black;
 }
 
 figcaption {
-  color: red;
+  text-align: centers;
+  color: white;
   margin-left: auto;
   background-color: black;
   position: relative;
@@ -235,4 +324,8 @@ figcaption {
 
 .centralise {
   margin-left: 6em;
+}
+
+span {
+  background: black;
 }
